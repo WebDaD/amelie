@@ -20,6 +20,7 @@ This Repository holds all concepts behind rsla and links to the real solutions.
     - [Server](#server)
     - [Clients](#clients-1)
   - [Pipes](#pipes)
+  - [Monitors](#monitors)
   - [Stats](#stats)
 - [Links](#links)
   - [Servers](#servers-1)
@@ -71,11 +72,13 @@ Addtional components are registries (server and client), pipes and stats-clients
 ## Clients
 All Clients must be able to:
 * Write a Log Entry to any server
+* Take any string and convert it to log-entry fields using regex and a config
 * Read the full Get API
 * Have a config with the following settings to be used as defaults:
 	* Default Value for Level
 	* Default Value Source
 	* Default Value for a Server (IP:Port)
+	* Default Message Parser ((.) == message)
 
 ## Servers
 All Servers must be reachable via http and share in common:
@@ -120,6 +123,10 @@ Consist of two parts:
 1. Behaves like a Logger Server, but sends something (email, file, ftp) with the info
 2. Watches for something and behaves like a client
 
+## Monitors
+Allow users to see changes in logs. This can be using sockets or creating an rss-feed.
+Monitors are standalone and use existing API-Servers.
+
 ## Stats
 Stats-Clients are special, as there are no limitations to them.
 Just be sure not to overload the servers you perform stats against...
@@ -157,6 +164,10 @@ And please consider our naming convention:
 * rsla-pipe-receiving-mail-php
 * rsla-pipe-sending-ftp-php
 * rsla-pipe-receiving-ftp-php
+
+## Monitors
+* rsla-monitor-nodejs-socket-io
+* rsla-monitor-php-rssfeed
 
 ## Stats
 * rsla-stats-perl
