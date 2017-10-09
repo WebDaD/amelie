@@ -3,6 +3,14 @@
 
 This Repository holds all concepts behind rsla and links to the real solutions.
 
+TODO:
+- Change name (API is not right. maybe engine?)
+- find a logo
+- Add a raml for the server api
+- Add some puml graphics
+  - CLI input parsing
+  - example arch
+
 - [Concepts](#concepts)
   - [A Log Entry](#a-log-entry)
   - [ID](#id)
@@ -13,6 +21,7 @@ This Repository holds all concepts behind rsla and links to the real solutions.
   - [TimeStamp](#timestamp)
 - [Architecture](#architecture)
   - [Clients](#clients)
+  - [Libraries] (#libraries)
   - [Servers](#servers)
     - [Export Formats](#export-formats)
     - [Paths](#paths)
@@ -71,6 +80,20 @@ Addtional components are registries (server and client), pipes and stats-clients
 
 ## Clients
 All Clients must be able to:
+* Write a Log Entry to any server
+* Take any string and convert it to log-entry fields using regex and a config
+* Read the full Get API
+* CLI must take standard in or be able to use one argument, others are parameters
+* GUIs must have all fields avaiable, may be hidden.
+* Have a config with the following settings to be used as defaults:
+	* Default Value for Level
+	* Default Value Source
+	* Default Value for a Server (IP:Port)
+	* Default Message Parser ((.) == message)
+
+## Libraries
+Are Extensions / Classes / modules / plugins for other programs to use.
+They:
 * Write a Log Entry to any server
 * Take any string and convert it to log-entry fields using regex and a config
 * Read the full Get API
