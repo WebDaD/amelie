@@ -21,7 +21,7 @@ TODO:
   - [TimeStamp](#timestamp)
 - [Architecture](#architecture)
   - [Clients](#clients)
-  - [Libraries] (#libraries)
+  - [Libraries](#libraries)
   - [Servers](#servers)
     - [Export Formats](#export-formats)
     - [Paths](#paths)
@@ -34,6 +34,7 @@ TODO:
 - [Links](#links)
   - [Servers](#servers-1)
   - [Clients](#clients-2)
+  - [Libraries](#libraries-1)
   - [Registry-Server](#registry-server)
   - [Registry-Client](#registry-client)
   - [Pipes](#pipes-1)
@@ -84,6 +85,7 @@ All Clients must be able to:
 * Take any string and convert it to log-entry fields using regex and a config
 * Read the full Get API
 * CLI must take standard in or be able to use one argument, others are parameters
+* CLI must be able to use a file-watcher
 * GUIs must have all fields avaiable, may be hidden.
 * Have a config with the following settings to be used as defaults:
 	* Default Value for Level
@@ -171,6 +173,13 @@ And please consider our naming convention:
 * rsla-client-node.js-cli
 * rsla-client-windows-console-application
 * rsla-client-bash
+* rsla-client-go
+
+## Libraries
+* rlsa-lib-nodejs
+* rlsa-lib-php
+* rsla-lib-csharp
+* rsla-lib-go
 
 ## Registry-Server
 * rsla-registry-server-php-mysql
@@ -181,6 +190,7 @@ And please consider our naming convention:
 * rsla-registry-client-node.js-cli
 * rsla-registry-client-windows-console-application
 * rsla-registry-client-bash
+* rsla-registry-client-go
 
 ## Pipes
 * rsla-pipe-sending-mail-php
