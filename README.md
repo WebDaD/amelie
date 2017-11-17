@@ -43,7 +43,7 @@ TODO:
 
 
 # Concepts
-Here are the concepts used by rsla
+Here are the concepts used by amelie
 
 ## A Log Entry
 Consists of
@@ -77,7 +77,7 @@ The Log Message in its full beauty. May Contain tags (#tag), other sources (@sou
 A [RFC 3339](https://tools.ietf.org/rfc/rfc3339.txt) date-time string (with or without UTC offset)
 
 # Architecture
-rsla consists of logging clients and servers to save logfiles.
+amelie consists of logging clients and servers to save logfiles.
 Addtional components are registries (server and client), pipes and stats-clients
 
 ## Clients
@@ -164,46 +164,50 @@ Here are the Links to all projects using these concepts. Entries that are not li
 Feel Free to File a Pull-Request with more solutions or create one of the entries!
 
 And please consider our naming convention:
-`rsla-[type]-[language]`
+`amelie-[type]-[language]`
 
 
 ## Servers
-* rsla-server-php-mysql
-* rsla-server-node.js-file
+* amelie-server-php-mysql
+* amelie-server-node.js-file
 
 ## Clients
-* rsla-client-perl
-* rsla-client-node.js-cli
-* rsla-client-windows-console-application
-* rsla-client-bash
-* rsla-client-go
+* amelie-client-perl
+* amelie-client-node.js-cli
+* amelie-client-windows-console-application
+* amelie-client-bash
+* amelie-client-go
 
 ## Libraries
-* rlsa-lib-nodejs
-* rlsa-lib-php
-* rsla-lib-csharp
-* rsla-lib-go
+* amelie-lib-server-nodejs
+* amelie-lib-server-php
+* amelie-lib-server-csharp
+* amelie-lib-server-go
+* amelie-lib-client-nodejs
+* amelie-lib-client-php
+* [amelie-lib-client-csharp](https://github.com/WebDaD/amelie-lib-client-csharp)
+* amelie-lib-client-go
 
 ## Registry-Server
-* rsla-registry-server-php-mysql
-* rsla-registry-server-node.js-file
+* amelie-registry-server-php-mysql
+* amelie-registry-server-node.js-file
 
 ## Registry-Client
-* rsla-registry-client-perl
-* rsla-registry-client-node.js-cli
-* rsla-registry-client-windows-console-application
-* rsla-registry-client-bash
-* rsla-registry-client-go
+* amelie-registry-client-perl
+* amelie-registry-client-node.js-cli
+* amelie-registry-client-windows-console-application
+* amelie-registry-client-bash
+* amelie-registry-client-go
 
 ## Pipes
-* rsla-pipe-sending-mail-php
-* rsla-pipe-receiving-mail-php
-* rsla-pipe-sending-ftp-php
-* rsla-pipe-receiving-ftp-php
+* amelie-pipe-sending-mail-php
+* amelie-pipe-receiving-mail-php
+* amelie-pipe-sending-ftp-php
+* amelie-pipe-receiving-ftp-php
 
 ## Monitors
-* rsla-monitor-nodejs-socket-io
-* rsla-monitor-php-rssfeed
+* amelie-monitor-nodejs-socket-io
+* amelie-monitor-php-rssfeed
 
 ## Stats
-* rsla-stats-perl
+* amelie-stats-perl
