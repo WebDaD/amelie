@@ -1,0 +1,84 @@
+1 {
+  2   "definitions": {}, 
+  3   "$schema": "http://json-schema.org/draft-06/schema#", 
+  4   "$id": "http://amelie.webdad.eu/log.example.json", 
+  5   "type": "object", 
+  6   "properties": {
+  7     "entry": {
+  8       "$id": "http://amelie.webdad.eu/log.example.json/properties/entry", 
+  9       "type": "object", 
+ 10       "properties": {
+ 11         "id": {
+ 12           "$id": "http://amelie.webdad.eu/log.example.json/properties/entry/properties/id", 
+ 13           "type": "string", 
+ 14           "title": "The ID", 
+ 15           "description": "An ID of the type uuidv4.", 
+ 16           "default": "", 
+ 17           "examples": [
+ 18             "c646d957-4090-46b3-9268-0e6eed54ce30"
+ 19           ]
+ 20         }, 
+ 21         "source": {
+ 22           "$id": "http://amelie.webdad.eu/log.example.json/properties/entry/properties/source", 
+ 23           "type": "string", 
+ 24           "title": "The Source.", 
+ 25           "description": "The Source sending the log.", 
+ 26           "default": "", 
+ 27           "examples": [
+ 28             "example-application"
+ 29           ]
+ 30         }, 
+ 31         "level": {
+ 32           "$id": "http://amelie.webdad.eu/log.example.json/properties/entry/properties/level", 
+ 33           "type": "string", 
+ 34           "title": "The Level.", 
+ 35           "description": "Level of the log-entry (eg info, warn, error).", 
+ 36           "default": "", 
+ 37           "examples": [
+ 38             "error","warn","info"
+ 39           ]
+ 40         }, 
+ 41         "message": {
+ 42           "$id": "http://amelie.webdad.eu/log.example.json/properties/entry/properties/message", 
+ 43           "type": "string", 
+ 44           "title": "The Message.", 
+ 45           "description": "The Message of the Log in short form.", 
+ 46           "default": "", 
+ 47           "examples": [
+ 48             "This is an Example"
+ 49           ]
+ 50         }, 
+ 51         "message_long": {
+ 52           "$id": "http://amelie.webdad.eu/log.example.json/properties/entry/properties/message_long", 
+ 53           "type": "string", 
+ 54           "title": "The Message_long Schema.", 
+ 55           "description": "Longer Text to support the message.", 
+ 56           "default": "", 
+ 57           "examples": [
+ 58             "And it has even more content here"
+ 59           ]
+ 60         }, 
+ 61         "timestamp": {
+ 62           "$id": "http://amelie.webdad.eu/log.example.json/properties/entry/properties/timestamp", 
+ 63           "type": "string", 
+ 64           "title": "The Timestamp Schema.", 
+ 65           "description": "A [RFC 3339](https://tools.ietf.org/rfc/rfc3339.txt) date-time string (with or without UTC offset)", 
+ 66           "default": "", 
+ 67           "examples": [
+ 68             "2017-11-17T09:29:32"
+ 69           ]
+ 70         }
+ 71       }, 
+ 72       "required": [
+ 73         "id", 
+ 74         "source", 
+ 75         "level", 
+ 76         "message", 
+ 77         "timestamp"
+ 78       ]
+ 79     }
+ 80   }, 
+ 81   "required": [
+ 82     "entry"
+ 83   ]
+ 84 }
