@@ -1,0 +1,18 @@
+{
+  "endpoint":"https://10.4.14.37:1234/logs",
+  "defaults": {
+    "source":"myApp",
+    "level":"error",
+    "message_regex":"(.)[:](.)[|](.+)"
+  },
+  "security": {
+    "read": {
+      "send_mac":false,
+      "public_key":"/path/to/key"
+    },
+    "write": {
+      "send_mac":false,
+      "public_key":"/path/to/key"
+    }
+  }
+}

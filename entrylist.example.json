@@ -1,0 +1,26 @@
+[
+  {
+    "id": "c646d957-4090-46b3-9268-0e6eed54ce30",
+    "source": "example-application",
+    "level": "error",
+    "message": "This is an Example",
+    "message_long": "And it has even more content here",
+    "timestamp": "2017-11-17T09:29:32"
+  },
+  {
+    "id": "c646d957-4090-46b3-9268-0e6eed54ce33",
+    "source": "example-application2",
+    "level": "error",
+    "message": "This is an Example2",
+    "message_long": "And it has even more content here2",
+    "timestamp": "2017-11-17T09:29:33"
+  },
+  {
+    "id": "c646d957-4090-46b3-9268-0e6eed54ce32",
+    "source": "example-application3",
+    "level": "error",
+    "message": "This is an Example3",
+    "message_long": "And it has even more content here3",
+    "timestamp": "2017-11-17T09:29:34"
+  }
+]

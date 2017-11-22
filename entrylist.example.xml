@@ -1,0 +1,26 @@
+<xml>
+  <entry>
+    <id>c646d957-4090-46b3-9268-0e6eed54ce30</id>
+    <source>example-application</source>
+    <level>error</level>
+    <message>This is an Example</message>
+    <message_long>And it has even more content here</message_long>
+    <timestamp>2017-11-17T09:29:32</timestamp>
+  </entry>
+  <entry>
+    <id>c646d957-4090-46b3-9268-0e6eed54ce32</id>
+    <source>example-application2</source>
+    <level>error</level>
+    <message>This is an Example2</message>
+    <message_long>And it has even more content here2</message_long>
+    <timestamp>2017-11-17T09:29:33</timestamp>
+  </entry>
+  <entry>
+    <id>c646d957-4090-46b3-9268-0e6eed54ce33</id>
+    <source>example-application3</source>
+    <level>error</level>
+    <message>This is an Example3</message>
+    <message_long>And it has even more content here3</message_long>
+    <timestamp>2017-11-17T09:29:34</timestamp>
+  </entry>
+</xml>

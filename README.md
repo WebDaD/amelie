@@ -5,12 +5,27 @@ This Repository holds all concepts behind amelie and links to the reference solu
 
 TODO:
 - find a logo
+- schemes neu machen
+- xsd neu machen
 - Add a raml for the server api
 - Add some puml graphics
   - CLI input parsing
   - example arch
-- Add json example and scheme
-- Add XML example and xsd
+- Add json schemes
+- Add XML xsd
+- Security:
+  - ip accetp list (single, range, wildcard)
+  - mac allow list (client may send it, if configured)
+  - certitifactes
+  - https://jwt.io/ https://www.npmjs.com/package/jsonwebtoken
+  - private public key
+- Config-File for Clients / Server:
+  - Keys, Examples, Defaults
+  - What File is not important (json for node.js, app.config for c#...)
+  - examoples: json, xml, ini
+- integrate examples, etc into README
+
+
 
 - [Concepts](#concepts)
   - [A Log Entry](#a-log-entry)
@@ -86,7 +101,7 @@ All Clients must be able to:
 * Take any string and convert it to log-entry fields using regex and a config
 * Read the full Get API
 * CLI must take standard in or be able to use one argument, others are parameters
-* CLI must be able to use a file-watcher
+* CLI can be able to use a file-watcher
 * GUIs must have all fields avaiable, may be hidden.
 * Have a config with the following settings to be used as defaults:
 	* Default Value for Level
@@ -140,7 +155,7 @@ Can save logger api endpoints and display latest. And can search in the saves ap
 
 ### Server
 A Registry must support the following Paths
-* POST /server (body: api-endpoint, identifier) - Add a new Endpoint
+* POST /server (body: api-endpoint, identifier) - Add a new endpoint
 * ...
 
 ### Clients

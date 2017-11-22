@@ -1,0 +1,27 @@
+{
+  "port":1234,
+  "database":"mysql",
+  "connection_string":"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;",
+  "security": {
+    "read": {
+      "ip_whitelist": [
+        "192.168.1.4",
+        "10.*"
+      ],
+      "mac_whitelist": false,
+      "certificate":"/path/to/cert.pem",
+      "public_key":"/path/to/key",
+      "jwt_secret":"verysecretword"
+    },
+    "write": {
+      "ip_whitelist": [
+        "192.168.1.4",
+        "10.14.4.13"
+      ],
+      "mac_whitelist": false,
+      "certificate":"/path/to/cert.pem",
+      "public_key":"/path/to/key",
+      "jwt_secret":"verysecretword"
+    }
+  }
+}

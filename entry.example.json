@@ -1,0 +1,8 @@
+{
+  "id": "c646d957-4090-46b3-9268-0e6eed54ce30",
+  "source": "example-application",
+  "level": "error",
+  "message": "This is an Example",
+  "message_long": "And it has even more content here",
+  "timestamp": "2017-11-17T09:29:32"
+}
