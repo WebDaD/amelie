@@ -23,6 +23,7 @@ TODO:
   - What File is not important (json for node.js, app.config for c#...)
   - examoples: json, xml, ini
 - integrate examples, etc into README
+- website under /docs
 
 
 
@@ -155,10 +156,24 @@ Can save logger api endpoints and display latest. And can search in the saves ap
 ### Server
 A Registry must support the following Paths
 * POST /server (body: api-endpoint, identifier) - Add a new endpoint
-* ...
+* GET /server - get list of servers connected
+* DELETE /server - remove a server from the list
+* PUT /server (body: api-endpoint, identifier) - Update an existing endpoint
+* GET /server/:identifier/log  - get all log entries of the endpoint
+* GET /server/:identifier/log/sources  - get all sources of the endpoint
+* GET /server/:identifier/log/levels  - get all Levels of the endpoint
+* GET /server/:identifier/log/tags  - get all Tags of the endpoint
+* GET /server/:identifier/log/:id  - get object with id of the endpoint
+* GET /server/:identifier/log/source/:source  - get all entries to source of the endpoint
+* GET /server/:identifier/log/level/:level - get all entries to level of the endpoint
+* GET /server/:identifier/log/tag/:tag - get all entries to tag of the endpoint
+* GET /server/:identifier/search?query (query: source, level, from, to, tag, string, ...) of the endpoint
+* GET /server/:identifier/log/timestamp/:from/[:to]  - get from, if no to then now of the endpoint
+* GET /server/:identifier/log/last  - get newest Entry of the endpoint
+* GET /server/:identifier/log/last/:number  - get newest entries, where number is the number of entries to get of the endpoint
 
 ### Clients
-All clients must be able to consume and use the full regitry-server-api.
+All clients must be able to consume and use the full registry-server-api.
 
 ## Pipes
 Consist of two parts:
@@ -189,6 +204,7 @@ And please consider our naming convention:
 * amelie-client-perl
 * amelie-client-node.js-cli
 * amelie-client-windows-console-application
+* amelie-client-windows-winforms
 * amelie-client-bash
 * amelie-client-go
 
@@ -225,9 +241,10 @@ And please consider our naming convention:
 
 ## Stats
 * amelie-stats-perl
+* amelie-stats-r
 
 # Design
-Here are some simple Design Infos.
-Main Color: #ff007f
-Logo:
+Here are some simple Design Infos.  
+Main Color: #ff007f  
+Logo:  
 ![Logo amelie](https://raw.githubusercontent.com/WebDaD/amelie/master/amelie_logo.png)
