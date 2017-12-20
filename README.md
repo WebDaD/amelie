@@ -1,4 +1,4 @@
-![Logo amelie](https://raw.githubusercontent.com/WebDaD/amelie/master/amelie_logo.png?s=64) (A)melie - (m)ore (e)asy (l)ogging (i)n (e)verything
+<img src="https://raw.githubusercontent.com/WebDaD/amelie/master/amelie_logo.png" width="64" height="64"/> (A)melie - (m)ore (e)asy (l)ogging (i)n (e)verything
 ================================
 
 This Repository holds all concepts behind amelie and links to the reference solutions.
