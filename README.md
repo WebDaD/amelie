@@ -1,10 +1,9 @@
-(A)melie - (m)ore (e)asy (l)ogging (i)n (e)verything
+![Logo amelie](https://raw.githubusercontent.com/WebDaD/amelie/master/amelie_logo.png?s=64) (A)melie - (m)ore (e)asy (l)ogging (i)n (e)verything
 ================================
 
 This Repository holds all concepts behind amelie and links to the reference solutions.
 
 TODO:
-- find a logo
 - schemes neu machen
 - xsd neu machen
 - Add a raml for the server api
@@ -55,7 +54,7 @@ TODO:
   - [Registry-Client](#registry-client)
   - [Pipes](#pipes-1)
   - [Stats](#stats-1)
-
+- [Design](#design)
 
 # Concepts
 Here are the concepts used by amelie
@@ -226,3 +225,9 @@ And please consider our naming convention:
 
 ## Stats
 * amelie-stats-perl
+
+# Design
+Here are some simple Design Infos.
+Main Color: #ff007f
+Logo:
+![Logo amelie](https://raw.githubusercontent.com/WebDaD/amelie/master/amelie_logo.png)
