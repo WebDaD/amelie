@@ -12,6 +12,8 @@ TODO:
   - example arch
 - Add json schemes
 - Add XML xsd
+- Add database-table-create files
+  - mssql
 - Security:
   - ip accetp list (single, range, wildcard)
   - mac allow list (client may send it, if configured)
